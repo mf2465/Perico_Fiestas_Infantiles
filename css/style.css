@@ -1,0 +1,325 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	background-color: #eeeded;
+	height: 100%;
+	margin: 0;
+}
+
+/* Menú navegación */
+
+.navbar {
+	background-color: #df0707;
+	color: #eff5f5;
+	font-size: 18px;
+}
+
+.navbar .container-fluid .collapse .navbar-nav {
+	margin-top: 1rem;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+	color: rgba(255, 255, 255, 0.945);
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+	background-color: #ffffff;
+	border-radius: 8px;
+	color: rgba(0, 0, 0, 0.945);
+}
+
+.navbar .container-fluid .navbar-collapse {
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/* Separador colorido */
+
+.separador-container {
+	background-color: hsl(24, 89%, 52%);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+.separador-container2 {
+	background-color: red;
+	/*display: grid;*/
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 20px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; /* Ajusta esto según tus necesidades */
+    }
+
+/* banner invitación */
+
+#invitar {
+	background-image: url('../media/images/fondo.jpg');
+	background-position: center 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-shadow: 5px 1px 3px rgb(0, 0, 0);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	height: 480px;
+}
+
+/* sección Eventos */
+
+#tipo-evento {
+    display: flex;
+	margin-top: 20px;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+#eventos-container {
+    position: relative; 
+	}
+
+#eventos-container h2 {
+    position: absolute;
+	font-size: 24px;
+	color: #007BFF;
+	padding: 20px;
+
+}
+
+.spotlight {
+	margin-top: 60px;
+    flex: 1 0 21%;
+    max-width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* banner fiestas temáticas */
+
+#personajes {
+	background-image: url('../media/images/fiestas-tematicas.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	text-shadow: 5px 1px 3px rgb(0, 0, 0);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	height: 480px;
+}
+
+
+/* Section Styles */
+#servicios {
+	padding: 40px 20px;
+}
+  
+.fiestas-tematicas {
+	max-width: 1280px; 
+	margin: auto; 
+	padding: 20px;
+
+}
+  
+.fiestas-tematicas h2 {
+	font-size: 24px; 
+	color: #007BFF; 
+	margin-bottom: 10px;
+}
+  
+.fiestas-tematicas p {
+	font-size: 16px; 
+	line-height: 1.75; 
+	color: #666;
+}
+  
+#adicionales {
+	padding: 40px 20px;
+}
+
+.servicios-adicionales {
+	padding-top: 30px;
+}
+  
+.servicios-adicionales h2 {
+	font-size: 24px; 
+	color: #007BFF; 
+	margin-bottom: 10px; 
+}
+  
+.container.row > div {
+	padding: 15px;
+	text-align: center; 
+}
+  
+.container.row > div img.agrandar-hover {
+	transition: transform 0.3s ease-in-out; 
+}
+  
+.container.row > div:hover img.agrandar-hover {
+	transform: scale(1.05); 
+}
+  
+/* Responsive Design */
+  @media (max-width: 768px) {
+   .container.row > div {
+	  flex-basis: 100%; 
+	}
+  }
+
+  .contacto-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #f9f9f9;
+}
+
+.contacto-container h2 {
+	font-size: 24px; 
+	color: #007BFF; 
+	margin-bottom: 10px;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+button {
+    background-color:  hsl(24, 89%, 52%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* footer */
+
+footer {
+	background-color: hsl(24, 89%, 52%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1rem 0rem;
+	padding: 1rem;
+}
+
+footer > div {
+	width: 30%;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.googleMap {
+	width: 100%;
+	height: 50%;
+}
+
+footer h2 {
+	color: whitesmoke;
+}
+
+footer h4 {
+	color: whitesmoke;
+}
+
+footer ul {
+	list-style: none;
+	line-height: 2.5;
+	color: black;
+	margin-left: 10px;
+	padding: 0;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+
+/* whatapps */
+
+.floatWhat{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    margin-top:16px;
+}
+
+.floatWhat:hover {
+	text-decoration: none;
+	color: #FFF;
+    background-color:#1ab152;
+}
+
+.my-floatWhat{
+	margin-top:16px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+	footer {
+		display: block;
+	}
+
+	footer > div {
+		width: 50%;
+		margin: 0 auto;
+	}
+}
